@@ -1,0 +1,758 @@
+
+<!---------------------------------------A PROJECT BY ZAINAB KHALID (PAGE 3)--------------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-----META LINKS------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----BOOTSTRAP 5 CDN LINKS------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-----FONT AWESOME CDN LINK------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-----ATTACHED ICON CDN LINK------->
+    <link rel="icon" href="SKYZ E-com Data/icon.png">
+    
+    <!-----CSS & JS FILE LINKS------->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>SKYZ : Hut Section ~ A Project by Zainab Khalid</title>
+</head>
+
+<body>
+
+ <!----------------------------------NAVBAR----------------------------------------->
+ <div class="container-fluid  bg-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+        <div class="container-fluid">
+            <!--------------------LOGO PICTURE---------------> 
+            <a href="#" class="navbar-brand"><img src="SKYZ E-com Data/jkjk.png" height="50" width="60" alt="SKYZ Logo"></a>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo"><span class="navbar-toggler-icon"></span></button>
+
+            <!-------DISPLAY OPTIONS-----------------------> 
+            <div id="demo" class="collapse navbar-collapse"> 
+                <ul class="navbar-nav px-3 pt-2">
+                    <li class="nav-item"><a href="#" class="nav-link">OFFERS</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link">DEALS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SALES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME DELIVERY</a></li>
+                    <!-------DELIVERY ADDRESS------------------------>
+                    <li class="nav-item"><p class="para"><i class="icon fa-solid fa-location-dot"></i><b> DELIVERING ALL ACROSS PAKISTAN</b></p></li>
+                </ul>
+                <div class="mx-5">
+                    <!--------SEARCH BAR-----------------------------> 
+                    <form> 
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Search the Product" class="form-control">
+                            <button class="btn btn-primary" style="background-color: orange; color: black; border: 0px solid orange;">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-----------MENU BAR------------>
+<div class="menu container-fluid ">
+    <div class="list-group list-group-flush list-group-horizontal list-group-item-secondary">
+        <!------OPTION 1------>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: orange; color: black; font-size: x-large;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+            <i class="fa-solid fa-bars"></i> MENU
+        </a>
+        <!------OPTION 2------>
+
+        <a href="Clothes-option.html" target="_main" class="menu list-group-item list-group-item-action">
+            <i class="fa-solid fa-person-dress"></i> CLOTHES
+        </a>
+      <!------OPTION 3------>
+
+        <a href="Shoes-option.html" target="_main" class="menu list-group-item list-group-item-action">
+            <i class="fa-solid fa-shoe-prints"></i> SHOES
+        </a>
+
+      <!------OPTION 4------>
+
+        <a href="Hut-option.html" target="_main" class="menu list-group-item list-group-item-action">
+            <i class="fa-solid fa-kitchen-set"></i> HUT
+        </a>
+    <!------CLOSING TAGS--------->
+    </div>
+</div>
+
+
+ <!-- OFF CANVAS FOR ALL OPTION -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-danger" id="offcanvasLabel"><b>SKYZ INTERNATIONAL</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <h5 class="text-success"><b>Hey User!</b></h5>
+        <p class="text-muted">
+            Welcome to Skyz! At Skyz, we believe in reaching new heights in quality, innovation, and style. Dedicated to creating exceptional products that empower and inspire, we combine modern design with functionality to meet the needs of our diverse, forward-thinking community. Whether you're looking for everyday essentials, cutting-edge technology, or lifestyle products, Skyz is here to elevate your experience with uncompromising standards and thoughtful craftsmanship. Join us as we continue to push boundaries and make life’s journey more vibrant, connected, and memorable. Welcome to the Skyz experience—where your aspirations take flight!
+        </p>
+
+        <!-- Login Form (Initially Visible) -->
+        <div id="loginSection" style="margin-top: 20px;">
+            <h5 class="text-success"><b>SKYZ LOGIN FORM</b> <i class="fa-solid fa-user"></i></h5>
+            <form id="loginForm" novalidate>
+                <label class="form-label">Enter your Name:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-signature"></i></span>
+                    <input type="text" id="name" placeholder="Name" class="form-control" required>
+                </div>
+
+                <label class="form-label">Enter your Location:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-location-arrow"></i></span>
+                    <input type="text" id="location" placeholder="Location" class="form-control" required>
+                </div>
+
+                <label class="form-label">Enter your Email:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="email" placeholder="Email" class="form-control" required>
+                </div>
+
+                <label class="form-label">Enter your Username:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username" placeholder="Username" class="form-control" required>
+                </div>
+                
+                <button type="button" onclick="loginUser()" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-danger ms-2" data-bs-dismiss="offcanvas">Close</button>
+            </form>
+        </div>
+
+        <!-- Account Section (Initially Hidden) -->
+        <div id="accountSection" style="display: none; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+            <h5 class="text-success" style="font-weight: bold; margin-bottom: 20px;">Your Account</h5>
+            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+                <p style="margin: 5px 0;"><strong>Name:</strong> <span id="accountName" style="color: #333;"></span></p>
+                <p style="margin: 5px 0;"><strong>Location:</strong> <span id="accountLocation" style="color: #333;"></span></p>
+                <p style="margin: 5px 0;"><strong>Email:</strong> <span id="accountEmail" style="color: #333;"></span></p>
+                <p style="margin: 5px 0;"><strong>Username:</strong> <span id="accountUsername" style="color: #333;"></span></p>
+            </div>
+            <button type="button" onclick="logoutUser()" class="btn btn-danger" style="width: 100%; font-weight: bold;">Logout</button>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDER -->
+<div class="container-fluid bg-dark">
+    <div class="carousel slide" id="hutCarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-slide-to="0" data-bs-target="#hutCarousel" class="active" aria-current="true"></button>
+            <button data-bs-slide-to="1" data-bs-target="#hutCarousel"></button>
+            <button data-bs-slide-to="2" data-bs-target="#hutCarousel"></button> 
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="SKYZ E-com Data/hut slider 1.webp" class="d-block w-100" height="420" width="100%">
+                <div class="carousel-caption">
+                    <h3><i>QUALITY</i></h3>
+                    <p>Good and Perfection</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="SKYZ E-com Data/hut slider 2.webp" class="d-block w-100" height="420" width="100%">
+                <div class="carousel-caption">
+                    <h3><i>EASY TO HANDLE</i></h3>
+                    <p>Comfortable Working</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="SKYZ E-com Data/hut slider 3.webp" class="d-block w-100" height="420" width="100%">
+                <div class="carousel-caption">
+                    <h3><i>MODERN</i></h3>
+                    <p>Latest Techniques</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button class="carousel-control-prev" data-bs-target="#hutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#hutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Marquee -->
+    <marquee class="dialogue pt-5" behavior="scroll" direction="right" scrollamount="15">
+        <i class="fa-solid fa-bag-shopping"></i> <i>"Explore, Shop, Repeat"</i> <i class="fa-solid fa-bag-shopping"></i>
+    </marquee>
+</div>
+
+
+
+<br><br>
+<!--------1x1 & 2x2 SECTION----------->
+<!--------OUTER SECTION---------->
+<h2 class="px-3 pt-3" id="deals-caption"> Hey Crockery <i class="fa-solid fa-bolt" style="color: red;"></i></h2>
+
+<div class="container-fluid">
+    <div class="container container-s section-one-main">
+        <!-----SINGLE SECTION------> 
+        <div class="div-s-one" style="background-color: yellowgreen;" >
+            <div class="pic-h" style="height: 300px; width: 100%;"><img src="SKYZ E-com Data//hut pro 1.png" class="ms-5"> </div>
+            <div class="banner-s">
+                <h3 class="text-danger ps-4">Utensil Stand <span class="badge bg-success">40% off</span>
+                </h3>
+
+            </div>
+            <br>
+            <div class="caption-s">
+                <i class="ps-2">"Enjoy comfy and easy washing by letting our product explore your kitchen.Easy ,Pessy and Ease here . Buy now!"</i><br><br>
+                <h5 class="text-success ps-2">RS 9,260</h5>
+            </div>
+            <div class="button-s mt-3 ms-2 mb-2">
+                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>
+                <button class="btn btn-sm btn-primary ms-2"data-bs-toggle="modal" data-bs-target="#view">View Details</button>
+            
+            </div>
+        </div>
+    
+        <!----------GRIDDED SECTION------> 
+        <div class="grid-section" style="background-color: yellowgreen;">
+           <div class="row " >
+            <div class="col-sm-6">
+                <div style="height: 250px; width: 310px;" class="pic-shoe"><span class="badge  bg-success">40% off</span>
+                    <img src="SKYZ E-com Data/hut pro 2.png" style="margin-bottom: 30px;"></div>
+            </div>
+            <div class="col-sm-6">
+                <div style="height: 250px; width: 300px;" class="pic-shoe"><span class="badge  bg-success">40% off</span><img src="SKYZ E-com Data/hut pro 3.png"  style="margin-bottom: 30px;"></div>
+
+            </div>
+
+           </div>
+           <div class="row">
+            <div class="col-sm-6" style="margin-top: 50px;">
+                <div style="height: 230px; width: 310px;" class="pic-shoe"><span class="badge  bg-success">40% off</span><img src="SKYZ E-com Data/hut pro 5.png"  ></div>
+
+            </div>
+            <div class="col-sm-6" style="margin-top: 50px;">
+                <div style="height: 80px; width: 300px;" class="pic-shoe"><span class="badge  bg-success">40% off</span><img src="SKYZ E-com Data/pic pic.png" ></div>
+            </div>
+
+           </div>
+<br><br><br><br><br><br><br>
+</div>
+</div><!-----CLOSING CONTAINER FLUID TAG------>
+</div><!----------CLOSING CONTAINER TAG------->
+
+
+<!----CAPTION FOR DEAL BOX------->
+<div class="container cont-caption" style="background-color: blueviolet; height: 250px;">
+        <h3 class="px-3 pt-3" id="deals-caption" style="text-align: center;"> DEAL here 4 in 1 <i class="fa-solid fa-shoe-prints" style="color: red;"></i></h3>
+        <h4 class="px-3 pt-3" id="deals-caption" style="text-align: center;"> 4 Pairs in Just "RS 18,999" </h4>
+        <div class="row">
+            
+            <div class="col-md-4"></div> 
+
+             <div class="col-md-4 pt-5">
+             <button class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>
+             <button class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#view">VIEW DETAILS</button></div>
+
+             <div class="col-md-4"></div> 
+        </div>
+
+
+        <br><br>
+    </div>
+
+</div><!------CLOSSING CAPTION TAGS----->
+</div>
+<br><br>
+<hr>
+<h3 class="mx-4">View our Products</h3>
+<br>
+<div class="container-fluid">
+    <div class="row">
+       
+        <!-----------PIC 1----------->
+  
+          <div class="col-md-4">
+              
+              <img src="https://m.media-amazon.com/images/I/51FQROoLcdL.__AC_SX300_SY300_QL70_FMwebp_.jpg" height="300" width="350" class="rounded pic p-4"> 
+              <p class="text-success pt-3">"Cook up a storm with our must-have kitchen essentials! Elevate your culinary game and make every meal a masterpiece. 🍳✨ #KitchenGoals"</p>
+              <h3 class="text-danger">RS 3,000</h3>
+
+              <div class="btn-group">
+                  <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button>
+              </div>
+              <div class="min text-primary"><p class="min text-success">New</p></div>
+        
+          </div>
+         
+         <!-----------PIC 2----------->
+  
+  
+          <div class="col-md-4">
+              
+              <img src="https://m.media-amazon.com/images/I/81fT0vYeGyL._AC_UL480_FMwebp_QL65_.jpg"  height="300" width="350" class="rounded pic p-4"> 
+              <p class="text-success pt-3">"Transform your kitchen into a culinary haven! Discover tools that inspire creativity and make cooking a joy. 🍽️🌟 #CookWithPassion" </p>
+              <h3 class="text-danger">RS 2,500</h3>
+
+              <div class="btn-group">
+                  <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+              <div class="min text-primary"><p class="min text-success">New</p></div>
+  
+          </div>
+               <!-----------PIC 3----------->
+  
+          <div class="col-md-4">
+              
+              <img src="https://m.media-amazon.com/images/I/61L6wq0tCOL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350"class="rounded pic p-4" >
+              <p class="text-success pt-3">"Whip up deliciousness with our innovative kitchen gadgets! Simplify your cooking and savor every moment. 🍴❤️ #KitchenMagic" </p>
+              <h3 class="text-danger">RS 9,000</h3>
+
+              <div class="btn-group">
+                  <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+              <div class="min text-primary"><p class="min text-success">New</p></div>
+  
+          </div>
+
+          <div class="row">
+       
+            <!-----------PIC 4----------->
+      
+              <div class="col-md-4">
+                  
+                  <img src="https://m.media-amazon.com/images/I/61Av62s0YKL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350" class="rounded pic p-4"> 
+                  <p class="text-success pt-3">"Cook up a storm with our must-have kitchen essentials! Elevate your culinary game and make every meal a masterpiece. 🍳✨ #KitchenGoals"
+                    <h3 class="text-danger">RS 2,000</h3>
+                  <div class="btn-group">
+                      <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                      <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button>
+                  </div>
+                  <div class="min text-primary"><p class="min text-success">New</p></div>
+            
+              </div>
+             
+             <!-----------PIC 5----------->
+      
+      
+              <div class="col-md-4">
+                  
+                  <img src="https://m.media-amazon.com/images/I/81ZLvDm3LCL._AC_UL480_FMwebp_QL65_.jpg"  height="300" width="350" class="rounded pic p-4"> 
+                  <p class="text-success pt-3">"Transform your kitchen into a culinary haven! Discover tools that inspire creativity and make cooking a joy. 🍽️🌟 #CookWithPassion" </p>
+                  <h3 class="text-danger">RS 1,000</h3>
+
+                  <div class="btn-group">
+                      <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                      <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                  <div class="min text-primary"><p class="min text-success">New</p></div>
+      
+              </div>
+                   <!-----------PIC 6----------->
+      
+              <div class="col-md-4">
+                  
+                  <img src="https://m.media-amazon.com/images/I/41LZGTYxHRL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350"class="rounded pic p-4" >
+                  <p class="text-success pt-3">"Whip up deliciousness with our innovative kitchen gadgets! Simplify your cooking and savor every moment. 🍴❤️ #KitchenMagic" </p>
+                  <h3 class="text-danger">RS 4,000</h3>
+
+                  <div class="btn-group">
+                      <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                      <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                  <div class="min text-primary"><p class="min text-success">New</p></div>
+      
+              </div>
+    
+              <div class="row">
+       
+                <!-----------PIC 7----------->
+          
+                  <div class="col-md-4">
+                      
+                      <img src="https://m.media-amazon.com/images/I/61Uj4vqBVcL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350" class="rounded pic p-4"> 
+                      <p class="text-success pt-3">"Cook up a storm with our must-have kitchen essentials! Elevate your culinary game and make every meal a masterpiece. 🍳✨ #KitchenGoals"
+                        <h3 class="text-danger">RS 4,500</h3>
+                      <div class="btn-group">
+                          <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                          <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button>
+                      </div>
+                      <div class="min text-primary"><p class="min text-success">New</p></div>
+                
+                  </div>
+                 
+                 <!-----------PIC 8----------->
+          
+          
+                  <div class="col-md-4">
+                      
+                      <img src="https://m.media-amazon.com/images/I/71rm+T3eRCL._AC_UL480_FMwebp_QL65_.jpg"  height="300" width="350" class="rounded pic p-4"> 
+                      <p class="text-success pt-3">"Transform your kitchen into a culinary haven! Discover tools that inspire creativity and make cooking a joy. 🍽️🌟 #CookWithPassion" </p>
+                      <h3 class="text-danger">RS 6,000</h3>
+    
+                      <div class="btn-group">
+                          <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                          <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                      <div class="min text-primary"><p class="min text-success">New</p></div>
+          
+                  </div>
+                       <!-----------PIC 9----------->
+          
+                  <div class="col-md-4">
+                      
+                      <img src="https://m.media-amazon.com/images/I/81uA+IVnJcL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350"class="rounded pic p-4" >
+                      <p class="text-success pt-3">"Whip up deliciousness with our innovative kitchen gadgets! Simplify your cooking and savor every moment. 🍴❤️ #KitchenMagic" </p>
+                      <h3 class="text-danger">RS 2,300</h3>
+    
+                      <div class="btn-group">
+                          <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                          <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                      <div class="min text-primary"><p class="min text-success">New</p></div>
+          
+                  </div>
+        
+                  <div class="row">
+       
+                    <!-----------PIC 10----------->
+              
+                      <div class="col-md-4">
+                          
+                          <img src="https://m.media-amazon.com/images/I/61SuqFBBFXL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350" class="rounded pic p-4"> 
+                          <p class="text-success pt-3">"Cook up a storm with our must-have kitchen essentials! Elevate your culinary game and make every meal a masterpiece. 🍳✨ #KitchenGoals"
+                            <h3 class="text-danger">RS 6,500</h3>
+                          <div class="btn-group">
+                              <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                              <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button>
+                          </div>
+                          <div class="min text-primary"><p class="min text-success">New</p></div>
+                    
+                      </div>
+                     
+                     <!-----------PIC 11----------->
+              
+              
+                      <div class="col-md-4">
+                          
+                          <img src="https://m.media-amazon.com/images/I/711qykG8FGL._AC_UL480_FMwebp_QL65_.jpg"  height="300" width="350" class="rounded pic p-4"> 
+                          <p class="text-success pt-3">"Transform your kitchen into a culinary haven! Discover tools that inspire creativity and make cooking a joy. 🍽️🌟 #CookWithPassion" </p>
+                          <h3 class="text-danger">RS 7,600</h3>
+        
+                          <div class="btn-group">
+                              <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                              <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                          <div class="min text-primary"><p class="min text-success">New</p></div>
+              
+                      </div>
+                           <!-----------PIC 12----------->
+              
+                      <div class="col-md-4">
+                          
+                          <img src="https://m.media-amazon.com/images/I/81lVbix1dEL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350"class="rounded pic p-4" >
+                          <p class="text-success pt-3">"Whip up deliciousness with our innovative kitchen gadgets! Simplify your cooking and savor every moment. 🍴❤️ #KitchenMagic" </p>
+                          <h3 class="text-danger">RS 2,400</h3>
+        
+                          <div class="btn-group">
+                              <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                              <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                          <div class="min text-primary"><p class="min text-success">New</p></div>
+              
+                      </div>
+        
+                      <div class="row">
+       
+                        <!-----------PIC 13----------->
+                  
+                          <div class="col-md-4">
+                              
+                              <img src="https://m.media-amazon.com/images/I/81Q+QqNljjL._AC_UL480_FMwebp_QL65_.jpg" height="300" width="350" class="rounded pic p-4"> 
+                              <p class="text-success pt-3">"Cook up a storm with our must-have kitchen essentials! Elevate your culinary game and make every meal a masterpiece. 🍳✨ #KitchenGoals"
+                                <h3 class="text-danger">RS 2,000</h3>
+                              <div class="btn-group">
+                                  <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button>
+                              </div>
+                              <div class="min text-primary"><p class="min text-success">New</p></div>
+                        
+                          </div>
+                         
+                         <!-----------PIC 14----------->
+                  
+                  
+                          <div class="col-md-4">
+                              
+                              <img src="https://m.media-amazon.com/images/I/81+67klyEXL._AC_UL480_FMwebp_QL65_.jpg"  height="300" width="350" class="rounded pic p-4"> 
+                              <p class="text-success pt-3">"Transform your kitchen into a culinary haven! Discover tools that inspire creativity and make cooking a joy. 🍽️🌟 #CookWithPassion" </p>
+                              <h3 class="text-danger">RS 5,000</h3>
+            
+                              <div class="btn-group">
+                                  <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                              <div class="min text-primary"><p class="min text-success">New</p></div>
+                  
+                          </div>
+                               <!-----------PIC 15----------->
+                  
+                          <div class="col-md-4">
+                              
+                              <img src="https://m.media-amazon.com/images/I/91SbKnsPNVL._AC_SX679_.jpg" height="300" width="350"class="rounded pic p-4" >
+                              <p class="text-success pt-3">"Whip up deliciousness with our innovative kitchen gadgets! Simplify your cooking and savor every moment. 🍴❤️ #KitchenMagic" </p>
+                              <h3 class="text-danger">RS 2,800</h3>
+            
+                              <div class="btn-group">
+                                  <button class="btn btn-outline-danger btn-sm"data-bs-toggle="modal" data-bs-target="#check">BUY</button>
+                                  <button class="btn btn-outline-primary btn-sm"data-bs-toggle="modal" data-bs-target="#view">VIEW</button></div>
+                              <div class="min text-primary"><p class="min text-success">New</p></div>
+                  
+                          </div>
+            
+            
+            
+
+</div>
+
+<br><br>
+<hr>
+<br><br>
+<!------SUB FOOTER------->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 footer-msg" style="font-size: x-large; color: brown;"><i>We Thank You for visisting</i><i style="font-weight: bolder; color: black;"> SKYZ </i><i class="fa-regular fa-face-smile"></i></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 pt-2 ps-5 footer-msg" style="font-size: medium; ">FOLLOW US ON <i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i></div>
+        <div class="col-sm-4"></div>
+    </div>
+
+</div><!---CLOSING CONTAINER FLUID SUB FOOTER TAG------>
+<br><br>
+<hr>
+
+<!-------------MAIN FOOTER----->
+<div class="container-fluid" style="background-color: orange;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div style="height: 200px; width: 150px;">
+                    <dl>
+                        <dt>Customer Care</dt>
+                        <dd>Help Center</dd>
+                        <dd>How to Buy</dd>
+                        <dd>Our Head Office</dd>
+                        <dd>Principles of SKYZ</dd>
+                        <dd>Need Support</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div style="height: 200px; width: 150px;">
+                    <dl>
+                        <dt>About SKYZ</dt>
+                        <dd>Latest Style</dd>
+                        <dd>Easy Shopping</dd>
+                        <dd>Repeatence of Customer</dd>
+                        <dd>Devotion & Effort</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div style="height: 200px; width: 150px;">
+                    <dl>
+                        <dt>Payment Methods</dt>
+                        <dd>VISA CARD</dd>
+                        <dd>JAZZ CASH</dd>
+                        <dd>EasyPaisa</dd>
+                        <dd>Cash</dd>
+                        <dd>Bank Transfer</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br>
+<!--------SKYZ INTERNATIONAL CONTAINER FLUID----->
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4"><b style="font-size: x-large; text-decoration: underline; color: brown;">SKYZ INTERNATIONAL NOW AT</b> </div>
+</div>
+<div class="row mt-4">
+    <div class="col-sm-2"><P> <i class="fa-solid fa-flag" style="color: green;"></i> PAKISTAN</P></div>
+    <div class="col-sm-2"> <P> <i class="fa-solid fa-flag" style="color: red;"></i> TURKEY</P></div>
+    <div class="col-sm-2">  <P> <i class="fa-solid fa-flag" style="color: orange;"></i> DUBAI</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: palevioletred;"></i> UK</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: purple;"></i> SCOTLAND</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: blue;"></i> QATAR</P></div>
+</div>
+</div><!----CLOSING INTERNATIONAL TAG------->
+
+
+<!---------MODAL FOR VIEW DETAILS BUTTON--------->
+<div class="modal fade" id="view" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header ">
+                <h1 class="modal-title " style="color: blue;">Deatils for Product</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body ">
+                <!-----Discription of product------>
+                Here's a versatile, general product description that can apply to a wide range of products:
+                <br>
+                <br>
+                <b class="text-success">Discover Quality and Innovation</b><br><br>
+                Experience a perfect blend of quality, performance, and style with this product, crafted to meet your needs with exceptional precision. Designed for both functionality and aesthetics, it brings a modern touch and a durable build to your daily life. Whether you're looking for reliability, advanced features, or just something to enhance your lifestyle, this product promises a seamless experience.
+                <br><br>
+                <b class="text-success">Why Choose This Product?</b>
+                <br>
+                - <i class="text-danger">Uncompromising Quality</i><br> Made with high-quality materials and crafted for longevity.<br><br>
+                - <i class="text-danger">User Friendly Design </i><br> Thoughtfully designed for comfort, convenience, and ease of use..<br><br>
+                - <i class="text-danger">Exceptional Value </i><br> Balances advanced features with affordability, making it a wise choice..<br><br>
+                - <i class="text-danger">Versatile Use</i><br> Perfect for various needs and environments, making it a reliable companion in any setting..<br><br>
+                <br>
+               <i class="text-danger"> Upgrade your experience today with a product that combines innovative design with dependable performance! </i>  
+                <br><br>
+
+                <!----COLORS AVAILABLE------->
+                <h4 class="text-success">Colors Available</h4>
+                <br>
+                <div class="btn-group">
+                    <button class="btn btn-outline-warning rounded-pill">Yellow</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Pink</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Black</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Orange</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Magenta</button>
+                </div>
+                <br><br>
+               <i>Press Checkout to proceed further!</i>
+
+            </div>
+           
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#check">Checkout</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+
+        </div>
+    </div>
+</div>
+<!-----------MODAL FOR CHECKOUT---------->
+<div class="modal fade" id="check" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title"><i class="fa-solid fa-right-long"></i> Checkout</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <!--------PAYMENT SCHEDULE-------->
+                <h4 class="text-success">Charges Schedule</h4>
+                <ul>
+                    <li>Product Price (PRP) = As mentioned </li>
+                    <li>Delievery Charges (DC)= RS 300</li>
+                    <li>Platform Charges (PC) = RS 100</li>
+                    <li><h5 class="text-danger">Grand Total ={PRP+DC+PC}</h5></li>
+                </ul>
+               <!---------PAYMENT METHODS------->
+               <h4 class="text-success">You can Pay by</h4>
+               <div class="list-group list-group-numbered">
+                <a  class="list-group-item" href="#" >Cash on Delievery</a>
+                    <a  class="list-group-item" href="#" >Jazz Cash</a>
+                        <a  class="list-group-item" href="#" >Easy Paisa</a>
+                            <a  class="list-group-item " href="#" >Bank Transfer</a>
+                            </div><br><br>
+                <!-------FORM TO FILL------>
+                <h4 class="text-success">Fill the Form</h4>
+                <form class="was-validated" novalidate>
+
+                    <label class="form-label">Enter Customer Name:</label>
+        
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-signature"></i></span>
+                    <input type="text" placeholder="Name" class="form-control" required><br><br>
+                    </div>
+                   
+                    <label class="form-label">Enter House Address:</label>
+        
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                  <input type="text" placeholder="Address" class="form-control" required><br><br>
+                    </div>
+         
+                    <label class="form-label">Enter your Email:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                  <input type="email" placeholder="Email" class="form-control "required><br><br>
+                    </div>
+        
+                    <label class="form-label">Kindly Pass Reviews:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-message"></i></span>
+                  <textarea  placeholder="Reviews" class="form-control "required></textarea>
+                    </div>
+                    <br>
+                    </form>
+                    <h4><i class="text-danger">We Thank You for your Corporation. Your product will be delieverd shortly!</i></h4>
+
+
+
+                        </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Save</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+        </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

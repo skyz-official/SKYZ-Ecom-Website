@@ -1,0 +1,646 @@
+
+<!---------------------------------------A PROJECT BY ZAINAB KHALID--------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-----META LINKS------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----BOOTSTRAP 5 CDN LINKS------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-----FONT AWESOME CDN LINK------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-----ATTACHED ICON CDN LINK------->
+    <link rel="icon" href="SKYZ E-com Data/icon.png">
+    
+    <!-----CSS & JS FILE LINKS------->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>SKYZ : Explore, Shop, Repeat ~ A Project by Zainab Khalid</title>
+</head>
+
+<body>
+
+    <!----------------------------------NAVBAR----------------------------------------->
+    <div class="container-fluid  bg-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+            <div class="container-fluid">
+                <!--------------------LOGO PICTURE---------------> 
+                <a href="#" class="navbar-brand"><img src="SKYZ E-com Data/jkjk.png" height="50" width="60" alt="SKYZ Logo"></a>
+                
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo"><span class="navbar-toggler-icon"></span></button>
+
+                <!-------DISPLAY OPTIONS-----------------------> 
+                <div id="demo" class="collapse navbar-collapse"> 
+                    <ul class="navbar-nav px-3 pt-2">
+                        <li class="nav-item"><a href="#" class="nav-link">OFFERS</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link">DEALS</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">SALES</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">HOME DELIVERY</a></li>
+                        <!-------DELIVERY ADDRESS------------------------>
+                        <li class="nav-item"><p class="para"><i class="icon fa-solid fa-location-dot"></i><b> DELIVERING ALL ACROSS PAKISTAN</b></p></li>
+                    </ul>
+                    <div class="mx-5">
+                        <!--------SEARCH BAR-----------------------------> 
+                        <form> 
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" placeholder="Search the Product" class="form-control">
+                                <button class="btn btn-primary" style="background-color: orange; color: black; border: 0px solid orange;">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-----------MENU BAR------------>
+    <div class="menu container-fluid ">
+        <div class="list-group list-group-flush list-group-horizontal list-group-item-secondary">
+            <!------OPTION 1------>
+            <a href="#" class="list-group-item list-group-item-action" style="background-color: orange; color: black; font-size: x-large;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <i class="fa-solid fa-bars"></i> MENU
+            </a>
+            <!------OPTION 2------>
+
+            <a href="Clothes-option.html" target="_main" class="menu list-group-item list-group-item-action">
+                <i class="fa-solid fa-person-dress"></i> CLOTHES
+            </a>
+          <!------OPTION 3------>
+
+            <a href="Shoes-option.html" target="_main" class="menu list-group-item list-group-item-action">
+                <i class="fa-solid fa-shoe-prints"></i> SHOES
+            </a>
+
+          <!------OPTION 4------>
+
+            <a href="Hut-option.html" target="_main" class="menu list-group-item list-group-item-action">
+                <i class="fa-solid fa-kitchen-set"></i> HUT
+            </a>
+        <!------CLOSING TAGS--------->
+        </div>
+    </div>
+
+    <!--------OFF CANVAS FOR ALL OPTION------>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-danger" id="offcanvasLabel"><b>SKYZ INTERNATIONAL</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+    
+            <H5 class="text-success"><b>Hey User!</i></b> </H5>
+               <i >Welcome to Skyz
+                At Skyz, we believe in reaching new heights in quality, innovation, and style. Dedicated to creating exceptional products that empower and inspire, we combine modern design with functionality to meet the needs of our diverse, forward-thinking community. Whether you're looking for everyday essentials, cutting-edge technology, or lifestyle products, Skyz is here to elevate your experience with uncompromising standards and thoughtful craftsmanship. Join us as we continue to push boundaries and make life’s journey more vibrant, connected, and memorable. Welcome to the Skyz experience—where your aspirations take flight!</i>
+             <br><br>
+            <!-- Login Form (Initially Visible) -->
+            <div id="loginSection">
+                <h5 class="text-success"><b>SKYZ LOGIN FORM</b> <i class="fa-solid fa-user"></i></h5>
+                <form id="loginForm" novalidate>
+                    <label class="form-label">Enter your Name:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-signature"></i></span>
+                        <input type="text" id="name" placeholder="Name" class="form-control" required>
+                    </div>
+    
+                    <label class="form-label">Enter your Location:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-location-arrow"></i></span>
+                        <input type="text" id="location" placeholder="Location" class="form-control" required>
+                    </div>
+    
+                    <label class="form-label">Enter your Email:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" id="email" placeholder="Email" class="form-control" required>
+                    </div>
+    
+                    <label class="form-label">Enter your Username:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="username" placeholder="Username" class="form-control" required>
+                    </div>
+                    <br>
+                    <button type="button" onclick="loginUser()" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-danger ms-2" data-bs-dismiss="offcanvas">Close</button>
+                </form>
+            </div>
+    
+            <!-- Account Section (Initially Hidden) -->
+       <div id="accountSection" style="display: none; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+        <h5 class="text-success" style="font-weight: bold; margin-bottom: 20px;">Your Account</h5>
+        <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+            <p style="margin: 5px 0;"><strong>Name:</strong> <span id="accountName" style="color: #333;"></span></p>
+            <p style="margin: 5px 0;"><strong>Location:</strong> <span id="accountLocation" style="color: #333;"></span></p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> <span id="accountEmail" style="color: #333;"></span></p>
+            <p style="margin: 5px 0;"><strong>Username:</strong> <span id="accountUsername" style="color: #333;"></span></p>
+        </div>
+        <button type="button" onclick="logoutUser()" class="btn btn-danger" style="width: 100%; font-weight: bold;">Logout</button>
+    </div>
+</div>
+</div>
+
+    
+<!------BACKGROUNG LAYOUT----------->
+<div class="background">
+
+
+<marquee class="dialogue pt-5" behavior="scroll" direction="right" scrollamount="15" >
+    <i class="fa-solid fa-bag-shopping"></i>  <i>"Explore, Shop, Repeat"</i>  <i class="fa-solid fa-bag-shopping"></i>
+</marquee>
+</div>
+<!------DISCOUNT & BUTTON BOX--------->
+
+<div class="container-fluid">
+    <div class="container box-dis mt-3">
+        <!-------WELCOME NOTE TEXT----->
+        <span class="d-flex justify-content-center">
+            <i class="fa-solid fa-tag mt-2 dis-icon"></i> 
+            <b>10% INSTANT DISCOUNT up to RS 20,000</b>
+        </span>
+        <!----WELCOME NOTE BUTTON------->
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-4">
+                <button class="btn btn-warning bt-dis rounded-pill mt-3" data-bs-toggle="modal" data-bs-target="#welcome">WELCOME NOTE!</button>
+            </div>    
+            <br><br>
+            <!------OPENING MESSAGE------->
+            <div class="col-sm-3"></div>
+            <marquee behavior="alternate" direction="left" class="text-success">
+                CLICK THE ABOVE BUTTON
+            </marquee><br>
+        </div>
+    </div>
+</div>
+
+<!----WELCOME MODAL-------->
+
+<div class="modal fade" id="welcome" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header modal-header-one">
+                <h1 class="modal-title px-4">WELCOME FRIEND!</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body modal-body-one">
+                <i>Hello and a warm welcome to our online shopping haven! We're thrilled to have you join our community of shoppers. Here at SKYZ , we believe that every shopping experience should be as enjoyable and effortless as possible.
+                 <br><br>
+                Take your time to explore our wide selection of products, crafted with care and designed to meet your needs. Whether you're looking for the latest trends, unique finds, or everyday essentials, we’ve got something just for you!
+                <br><br>
+                If you have any questions or need assistance, don't hesitate to reach out. Our friendly team is here to help you every step of the way. We value your experience and want to ensure you find exactly what you’re looking for.
+                <br><br>
+                Thank you for choosing us for your shopping needs. We hope you find joy in every purchase and come back to visit us again soon. Happy shopping!
+                <br><br>
+                Warm regards,
+                <br>
+                The SKYZ Team</i>
+            </div>
+            <div class="modal-footer modal-footer-one">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+            <!--------CLOSING TAGS OF MODAL------>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<br><br>
+<!---------------------DEALS------------------->
+<!-----OUTER DEALS------>
+<div class="container-fluid">
+    <h4 class="px-3 pt-3" id="deals-caption"> Brands in Focus Deals <i class="fa-solid fa-bolt" style="color: red;"></i></h4>
+<!-----INNER DEALS------>
+<div class="container">
+<div class="row">
+    <!-----BOX 1------>
+    <div class="col-sm-4" style="background-color: orange;">
+      
+        <img src="SKYZ E-com Data/mp5.png" height="420" width="300" class="mt-2 mobile">
+        <div style="height: 220px; width: 320px; background-color: aliceblue; border: 2px solid red;">
+            <h5 class="text-danger"> Discount on VIVO Y16 <span class="badge bg-danger">20%</span></h5>
+             <p style="text-align: center;" class="mobile-caption" ><i>"There is a large 6.51 inch IPS LCD capacitive touch screen display on the Y16" </i></p>
+             <h5 class="mobile-price">RS 50,000</h5>
+             <h4 class="mobile-new-price">RS 40,000</h4>
+             <button class="btn  btn-sm btn-danger ms-2 mt-2" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>
+        </div>
+        <br>
+
+    </div>
+
+        <!-----BOX 2------>
+
+    <div class="col-sm-4" style=" background-color: orange;">
+
+        <img src="SKYZ E-com Data/mp2.png" height="420" width="300" class="mt-2 mobile">
+        <div style="height: 220px; width: 320px; background-color: aliceblue;border: 2px solid red;">
+            <h5 class="text-danger"> Discount on REDMI 13C <span class="badge bg-danger">30%</span></h5>
+             <p style="text-align: center;" class="mobile-caption" ><i>"There is a large 6.57 inch IPS LCD capacitive touch screen display on the 13C" </i></p>
+             <h5 class="mobile-price">RS 65,000</h5>
+             <h4 class="mobile-new-price">RS 45,500</h4>
+             <button class="btn  btn-sm btn-danger ms-2 mt-2" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>
+        </div>
+        <br>
+    </div>
+
+        <!-----BOX 3------>
+
+    <div class="col-sm-4" style=" background-color: orange;">
+
+        <img src="SKYZ E-com Data/mp3.png" height="420" width="300" class="mt-2 mobile">
+        <div style="height: 220px; width: 320px; background-color: aliceblue; border: 2px solid red">
+            <h5 class="text-danger"> Discount on POVA 5 Pro <span class="badge bg-danger">50%</span></h5>
+             <p style="text-align: center;" class="mobile-caption" ><i>"There is a large 6.59 inch IPS LCD capacitive touch screen display on the POVA" </i></p>
+             <h5 class="mobile-price">RS 80,000</h5>
+             <h4 class="mobile-new-price">RS 40,000</h4>
+             <button class="btn  btn-sm btn-danger ms-2 mt-2" data-bs-toggle="modal" data-bs-target="#check" >BUY NOW</button>
+        </div>
+        <br>
+    </div>
+    <!-----CLOSING TAGS OF DEAL BOX----->
+</div>
+</div>
+</div>
+
+<!--------CIRCLE BOX------->
+<div class="container-fluid mt-3">
+   <h4 id="deals-caption"> We will provide you <i class="fa-solid fa-star" style="color: yellow;"></i> </h4>
+<div class="main-circle row mt-5" >
+<!---------CIRCLE 1------>
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%; background-image: url(SKYZ\ E-com\ Data/books.png);">
+        </div>
+        <h5 style="color: brown;" class="px-4 pt-2">Books</h5>
+    </div>
+
+    <!---------CIRCLE 2------>
+
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%;  background-image: url(SKYZ\ E-com\ Data/groc.png);"></div>
+        <h5  style="color: brown;" class="px-4 pt-2">Grocery</h5>
+    </div>
+
+    <!---------CIRCLE 3------>
+
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%;  background-image: url(SKYZ\ E-com\ Data/Guitar.png);"></div>
+        <h5  style="color: brown;" class="px-4 pt-2">Music Items</h5>
+    </div>
+
+    <!---------CIRCLE 4------>
+
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%; background-image: url(SKYZ\ E-com\ Data/Footwear_com_SBC.png);"></div>
+        <h5  style="color: brown;" class="px-4 pt-2">Foot Wear</h5>
+    </div>
+
+    <!---------CIRCLE 5------>
+
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%; background-image: url(SKYZ\ E-com\ Data/Beauty__Makeup_SBC.png);"></div>
+        <h5  style="color: brown;" class="px-4 pt-2">Make Up</h5>
+    </div>
+
+    <!---------CIRCLE 6------>
+
+    <div class="col-sm-2">
+        <div style="height: 145px; width: 145px; border-radius: 50%;  background-image: url(SKYZ\ E-com\ Data/Jewellery.png);"></div>
+        <h5  style="color: brown;" class="px-4 pt-2">Jewellery</h5>
+    </div>
+    <!---CLOSING TAGS OF CIRCLE BOX-->
+</div>
+<br>
+</div>
+<BR><BR>
+
+<!-------------------------MARGIN BOX & MARQUE-------------------->
+
+<div style="height: 25px; width: 100%; background-color: orange;"></div>
+<br><br>
+<marquee behavior="alternate" direction="left" class="text-danger" scrollamount="15" style="font-size: x-large; font-weight: bolder;">
+    VIEW OUR LATEST COLLECTION
+</marquee>
+<br><br>
+<!--------------------------------DISPLAYING PRODUCTS----------------------->
+
+<!----MAIN DISPLAY CONTAINER------>
+<div class="container" >
+<!----------DISPLAY ROW 1---------->
+    <div class="row">
+        <!------PRODUCT 1------->
+    <div class="col-sm-4"  style=" background-color: orange;">
+       <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro1.png);"></div><br>
+       <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">hp Pavillion Laptop</h3></div><br>
+       <div class="caption-d"style="height: 50px; width: 350px; "><i>"Here is brand new hp PAVILLION for the gamers and programmers! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 78,779</h5></div><br><br><br>
+       <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger"data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2"data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+    </div>
+    
+    <!------PRODUCT 2------->
+
+    <div class="col-sm-4"  style="background-color: orange">
+        <div class="pic-d" style="height: 300px; width: 350px;  background-image: url(SKYZ\ E-com\ Data/finalpro3.png);"></div><br>
+        <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">Color Pop Eye Pallete</h3></div><br>
+        <div class="caption-d"style="height: 50px; width: 350px; "><i>""Enjoy fresh and our new launch for the ladies in town! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 5,560</h5></div><br><br><br>
+        <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger"data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button> <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+     </div>
+
+    <!------PRODUCT 3------->
+
+    <div class="col-sm-4"  style="background-color: orange;">
+        <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro2.png);"></div><br>
+        <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">Andriod Projector</h3></div><br>
+        <div class="caption-d"style="height: 50px; width: 350px; "><i>"Presenting you people our best andriod display for your work! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 12,240</h5></div><br><br><br>
+   <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger"data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+     </div>
+   </div>
+  
+
+<br><br>
+<!----------DISPLAY ROW 2---------->
+<div class="row">
+    <!------PRODUCT 4------->
+<div class="col-sm-4"  style="background-color:orange;">
+   <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro4.png);"></div><br>
+   <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">SONY Play Station 5</h3></div><br>
+   <div class="caption-d"style="height: 50px; width: 350px; "><i>""Enjoy junky and thrilling ride to games with SONY PS 5! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 65,990</h5></div><br><br><br>
+   <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+</div>
+
+<!------PRODUCT 5------->
+
+<div class="col-sm-4"  style=" background-color: orange;">
+    <div class="pic-d" style="height: 300px; width: 350px;  background-image: url(SKYZ\ E-com\ Data/finalpro5.png);"></div><br>
+    <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">Smart LED Watch</h3></div><br>
+    <div class="caption-d" style="height: 50px; width: 350px; "><i>"Here is our branded and lightened special watch for you people! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 9,280</h5></div><br><br><br>
+    <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger"data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button> <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+ </div>
+
+<!------PRODUCT 6------->
+
+<div class="col-sm-4"  style="background-color:orange">
+    <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro6.png);"></div><br>
+    <div class="banner-d" style="height: 50px; width: 350px;"><h3 class="text-danger ps-4" style="font-weight: bolder;">Auto Washing Machine</h3></div><br>
+    <div class="caption-d"style="height: 50px; width: 350px; "><i>"Enjoy clean, safe washing with our advanced water washer! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 45,550</h5></div><br><br><br>
+   <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger"data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+ </div>
+</div>
+
+<br><br>
+<!----------DISPLAY ROW 3---------->
+<div class="row">
+    <!------PRODUCT 7------->
+<div class="col-sm-4"  style=" background-color:orange;">
+   <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro7.png);"></div><br>
+   <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">AQUA Water Purifier</h3></div><br>
+   <div class="caption-d"style="height: 50px; width: 350px; "><i>""Enjoy clean, safe drinking water with our advanced water purifier! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 15,560</h5></div><br><br><br>
+   <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button> <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+</div>
+
+<!------PRODUCT 8------->
+
+<div class="col-sm-4"  style=" background-color: orange;">
+    <div class="pic-d" style="height: 300px; width: 350px;  background-image: url(SKYZ\ E-com\ Data/finalpro8.png);"></div><br>
+    <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">Smart Ear Band </h3></div>
+    <div class="caption-d"style="height: 50px; width: 350px; "><i>"Experience restful sleep and relaxation with our innovative smart ear band! Avail our amazing discount to have one "</i><br><br><h5 class="text-success" style="text-decoration: underline;">RS 15,560</h5></div><br><br><br>
+    <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2"data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+ </div>
+
+<!------PRODUCT 9------->
+
+<div class="col-sm-4"  style="background-color:orange;">
+    <div class="pic-d" style="height: 300px; width: 350px; background-image: url(SKYZ\ E-com\ Data/finalpro9.png);"></div><br>
+    <div class="banner-d" style="height: 50px; width: 350px; "><h3 class="text-danger ps-4" style="font-weight: bolder;">3D CCTV Camera</h3></div><br>
+    <div class="caption-d"style="height: 50px; width: 350px; "><i>"Secure your space with our advanced CCTV surveillance system today! Avail our amazing discount to have this"</i><BR><br><h5 class="text-success" style="text-decoration: underline;">RS 25,350 </h5></div><br><br><br>
+        <div class="button-d mt-3" style="height: 50px; width: 350px;"><button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#check">BUY NOW</button>  <button class="btn btn-sm btn-primary ms-2"data-bs-toggle="modal" data-bs-target="#view">View Details</button></div><br>
+    </div>
+</div>
+</div>  <!----CLOSING DISPLAY PROEDUCT CONTAINER TAG-->
+<br><br>
+<hr>
+<br><br>
+<!------SUB FOOTER------->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 footer-msg" style="font-size: x-large; color: brown;"><i>We Thank You for visisting</i><i style="font-weight: bolder; color: black;"> SKYZ </i><i class="fa-regular fa-face-smile"></i></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 pt-2 ps-5 footer-msg" style="font-size: medium; ">FOLLOW US ON <i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i></div>
+        <div class="col-sm-4"></div>
+    </div>
+
+</div><!---CLOSING CONTAINER FLUID SUB FOOTER TAG------>
+<br><br>
+<hr>
+
+<!-------------MAIN FOOTER----->
+<div class="container-fluid" style="background-color: orange;">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div style="height: 200px; width: 150px;">
+                <dl>
+                    <dt>Customer Care</dt>
+                    <dd>Help Center</dd>
+                    <dd>How to Buy</dd>
+                    <dd>Our Head Office</dd>
+                    <dd>Principles of SKYZ</dd>
+                    <dd>Need Support</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div style="height: 200px; width: 150px;">
+                <dl>
+                    <dt>About SKYZ</dt>
+                    <dd>Latest Style</dd>
+                    <dd>Easy Shopping</dd>
+                    <dd>Repeatence of Customer</dd>
+                    <dd>Devotion & Effort</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div style="height: 200px; width: 150px;">
+                <dl>
+                    <dt>Payment Methods</dt>
+                    <dd>VISA CARD</dd>
+                    <dd>JAZZ CASH</dd>
+                    <dd>EasyPaisa</dd>
+                    <dd>Cash</dd>
+                    <dd>Bank Transfer</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+<!--------SKYZ INTERNATIONAL CONTAINER FLUID----->
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4"><b style="font-size: x-large; text-decoration: underline; color: brown;">SKYZ INTERNATIONAL NOW AT</b> </div>
+</div>
+<div class="row mt-4">
+    <div class="col-sm-2"><P> <i class="fa-solid fa-flag" style="color: green;"></i> PAKISTAN</P></div>
+    <div class="col-sm-2"> <P> <i class="fa-solid fa-flag" style="color: red;"></i> TURKEY</P></div>
+    <div class="col-sm-2">  <P> <i class="fa-solid fa-flag" style="color: orange;"></i> DUBAI</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: palevioletred;"></i> UK</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: purple;"></i> SCOTLAND</P></div>
+    <div class="col-sm-2"> <P><i class="fa-solid fa-flag" style="color: blue;"></i> QATAR</P></div>
+</div>
+</div><!----CLOSING INTERNATIONAL TAG------->
+
+<!---------MODAL FOR VIEW DETAILS BUTTON--------->
+<div class="modal fade" id="view" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header ">
+                <h1 class="modal-title " style="color: blue;">Deatils for Product</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body ">
+                <!-----Discription of product------>
+                Here's a versatile, general product description that can apply to a wide range of products:
+                <br>
+                <br>
+                <b class="text-success">Discover Quality and Innovation</b><br><br>
+                Experience a perfect blend of quality, performance, and style with this product, crafted to meet your needs with exceptional precision. Designed for both functionality and aesthetics, it brings a modern touch and a durable build to your daily life. Whether you're looking for reliability, advanced features, or just something to enhance your lifestyle, this product promises a seamless experience.
+                <br><br>
+                <b class="text-success">Why Choose This Product?</b>
+                <br>
+                - <i class="text-danger">Uncompromising Quality</i><br> Made with high-quality materials and crafted for longevity.<br><br>
+                - <i class="text-danger">User Friendly Design </i><br> Thoughtfully designed for comfort, convenience, and ease of use..<br><br>
+                - <i class="text-danger">Exceptional Value </i><br> Balances advanced features with affordability, making it a wise choice..<br><br>
+                - <i class="text-danger">Versatile Use</i><br> Perfect for various needs and environments, making it a reliable companion in any setting..<br><br>
+                <br>
+               <i class="text-danger"> Upgrade your experience today with a product that combines innovative design with dependable performance! </i>  
+                <br><br>
+
+                <!----COLORS AVAILABLE------->
+                <h4 class="text-success">Colors Available</h4>
+                <br>
+                <div class="btn-group">
+                    <button class="btn btn-outline-warning rounded-pill">Yellow</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Pink</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Black</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Orange</button>
+                    <button class="btn btn-outline-warning  rounded-pill">Magenta</button>
+                </div>
+                <br><br>
+               <i>Press Checkout to proceed further!</i>
+
+            </div>
+           
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#check">Checkout</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+
+        </div>
+    </div>
+</div>
+<!-----------MODAL FOR CHECKOUT---------->
+<div class="modal fade" id="check" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title"><i class="fa-solid fa-right-long"></i> Checkout</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <!--------PAYMENT SCHEDULE-------->
+                <h4 class="text-success">Charges Schedule</h4>
+                <ul>
+                    <li>Product Price (PRP) = As mentioned </li>
+                    <li>Delievery Charges (DC)= RS 300</li>
+                    <li>Platform Charges (PC) = RS 100</li>
+                    <li><h5 class="text-danger">Grand Total ={PRP+DC+PC}</h5></li>
+                </ul>
+               <!---------PAYMENT METHODS------->
+               <h4 class="text-success">You can Pay by</h4>
+               <div class="list-group list-group-numbered">
+                <a  class="list-group-item" href="#" >Cash on Delievery</a>
+                    <a  class="list-group-item" href="#" >Jazz Cash</a>
+                        <a  class="list-group-item" href="#" >Easy Paisa</a>
+                            <a  class="list-group-item " href="#" >Bank Transfer</a>
+                            </div><br><br>
+                <!-------FORM TO FILL------>
+                <h4 class="text-success">Fill the Form</h4>
+                <form class="was-validated" novalidate>
+
+                    <label class="form-label">Enter Customer Name:</label>
+        
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-signature"></i></span>
+                    <input type="text" placeholder="Name" class="form-control" required><br><br>
+                    </div>
+                   
+                    <label class="form-label">Enter House Address:</label>
+        
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                  <input type="text" placeholder="Address" class="form-control" required><br><br>
+                    </div>
+         
+                    <label class="form-label">Enter your Email:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                  <input type="email" placeholder="Email" class="form-control "required><br><br>
+                    </div>
+        
+                    <label class="form-label">Kindly Pass Reviews:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-message"></i></span>
+                  <textarea  placeholder="Reviews" class="form-control "required></textarea>
+                    </div>
+                    <br>
+                    </form>
+                    <h4><i class="text-danger">We Thank You for your Corporation. Your product will be delieverd shortly!</i></h4>
+
+
+
+                        </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Save</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+    <script>
+(function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+        </script>
+
+
+</body>
+</html>

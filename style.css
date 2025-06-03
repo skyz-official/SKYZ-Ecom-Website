@@ -1,0 +1,258 @@
+/*---------------------------------------A PROJECT BY ZAINAB KHALID (STYLE SHEET )---------------------------------*/
+
+.para{
+    font-weight: bolder;
+    color:orange;
+    font-size: large;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    
+}
+.icon{
+    color: rgb(30, 30, 222);
+    font-size:xx-large;
+    
+}
+.menu{
+    background-color: orange;
+    font-size: large;
+    font-weight: bold;
+    color: maroon;
+}
+.menu:hover{
+    font-size: larger;
+    color: maroon;
+    background-color: lightsalmon;
+}
+.background{
+    height: 420px;
+    background-image: url(SKYZ\ E-com\ Data/bg1.jpg);
+    background-size: cover;
+}
+.dialogue{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: red;
+    animation-name: dialogue;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1ms;
+    animation-iteration-count:infinite ;
+}
+.arrow{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: navy;
+}
+.box-dis{
+    border: 2px solid gold;
+    font-size: x-large;
+}
+.dis-icon{
+    color: goldenrod;
+}
+.bt-dis{
+    font-weight:bold;
+    color: brown;
+}
+.modal-body-one{
+    background-color: gold;
+    color: brown;
+}
+.modal-header-one{
+    background-color: gold;
+    color: brown;
+}
+.modal-footer-one{
+    background-color: gold;
+    color: brown;
+}
+.mobile:hover{
+    transform: scale(1.2);
+}
+.mobile-caption:hover{
+    color: green;
+    text-decoration: underline;
+}
+.mobile-price{
+    color: red;
+    text-decoration: line-through;
+}
+.mobile-new-price{
+    color: green;
+    text-decoration: underline;
+}
+#deals-caption{
+    animation-name: caption;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+.caption-d:hover{
+    color: green;
+}
+.pic-d:hover{
+    transform: scale(1.1);
+}
+.banner-s:hover{
+    text-decoration: underline;
+    color: red;
+}
+.caption-s:hover{
+    color: green;
+}
+.pic-s:hover{
+    transform: scale(1.1);
+}
+.banner-s:hover{
+    text-decoration: underline;
+    color: red;
+}
+.cont-caption{
+    border: 2px solid black;
+}
+.pic-shoe:hover{
+    transform: scale(1.1);
+}
+@keyframes color {
+    0%{
+        color: orange;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+       color: red;
+    }
+    75%{
+       color: deeppink;
+    }
+    100%{
+       color: cadetblue;
+    }
+}
+@keyframes dialogue {
+    0%{
+        color: red;
+    }
+    25%{
+        color: white;
+    }
+    50%{
+       color: red;
+    }
+    75%{
+       color: white;
+    }
+    100%{
+       color: red;
+    }
+    
+}
+@keyframes caption {
+    0%{
+        color: red;
+    }
+    25%{
+        color: orange;
+    }
+    50%{
+       color: red;
+    }
+    75%{
+       color: blue;
+    }
+    100%{
+       color: maroon;
+    }    
+}
+.container {
+    padding: 20px; 
+}
+footer dl {
+    margin: 0; 
+}
+
+footer dt {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+footer dd {
+    margin: 2px 0; 
+}
+
+.container-s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-s-one {
+    border: 2px solid black;
+    background-color: orange;
+    height: auto; 
+    width: 550px;
+}
+
+.pic-s {
+    height: 300px; 
+    width: 100%; 
+    background-image: url('SKYZ E-com Data/shoes pro final.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.banner-s, .caption-s, .button-s {
+    height: auto;
+    width: 100%;
+}
+
+.grid-section {
+    border: 2px solid black;
+    height: 650px;
+    width: 750px;
+}
+
+@media(max-width:576px){
+    .bt-dis{
+        margin-left: 90px;
+    }
+}
+@media (max-width:576px) {
+    .footer-msg{
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .container-s {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-s-one, .grid-section {
+        width: 90%; 
+        height: auto; 
+    }
+
+    .pic-s {
+        height: 200px; 
+        width: 100%; 
+    }
+}
+@media (max-width:576px) {
+    .pair-deal-box{
+       margin-left:0% ;
+        margin-top: 20px;
+    }
+}
+.pic-h:hover{
+    transform: scale(1.1);
+}
+body {
+    padding-top: 75px; 
+}
